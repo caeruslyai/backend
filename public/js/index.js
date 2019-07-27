@@ -17,6 +17,9 @@ $(document).ready(function(){
         let hqCity = $("#hqCity").val();
         let hqState = $("#hqState").val();
         let hqZip = $("#hqZip").val();
+        let contractType = $("#contractType").val();
+
+        console.log(contractType);
 
         //check to see if all fields have been filled out
         if(cEmail === undefined || cPassword === undefined || companyName === undefined || siteStreet === undefined || siteCity === undefined ||
@@ -38,6 +41,7 @@ $(document).ready(function(){
                 site_city_state_zip: siteCity + ", " + siteState + " " + siteZip,
                 business_hq_street: hqStreet,
                 business_city_state_zip: hqCity + ", " + hqState + " " + hqZip,
+                contract_type: contractType
             }
 
             $.ajax("/database", {

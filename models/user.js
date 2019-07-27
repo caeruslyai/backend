@@ -7,6 +7,7 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
+      primaryKey: true,
       validate: {
         isEmail: true,
       }
@@ -17,7 +18,24 @@ module.exports = function (sequelize, DataTypes) {
       validate: {
         len: [8]
       }
-    }
+    },
+    business_name: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    business_street: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    business_city_state_zip: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    business_hq: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },      
+    timestamps: false    
   });
 
   // Creating a custom method for our User model. This will check if an unhashed password entered by the user can be compared to the hashed password stored in our database

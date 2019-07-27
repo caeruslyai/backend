@@ -14,77 +14,81 @@
 <body>
   <div class="container">
     <h1>Test</h1>
+    <div id="form-container" class="row justify-content-center">
+      <form>
+        <!-- <div class="form-row"> -->
+        <div class="form-group col-md-4">
+          <label for="companyEmail">Email</label>
+          <input type="email" class="form-control" id="companyEmail" placeholder="Email">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Password">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" class="form-control" id="confirmPassword" placeholder="Password">
+        </div>
+
+        <!-- </div> -->
+        <div class="form-group col-md-4">
+          <label for="businessAddress">Business Name</label>
+          <input type="text" class="form-control" id="businessAddress" placeholder="1234 Main St">
+        </div>
+
+        <div class="form-row col-md-12">
+
+          <div class="form-group col-md-4">
+            <label for="siteAddress">Site Address</label>
+            <input type="text" class="form-control" id="siteAddress" placeholder="1234 Main St">
+          </div>
+
+          <div class="form-group col-md-2">
+            <label for="city">City</label>
+            <input type="text" class="form-control" id="city">
+          </div>
+
+          <div class="form-group col-md-2">
+            <label for="state">State</label>
+            <input type="text" class="form-control" id="state" placeholder="WA">
+          </div>
+
+          <div class="form-group col-md-2">
+            <label for="zip">Zip</label>
+            <input type="text" class="form-control" id="zip">
+          </div>
+
+        </div>
+
+        <div class="form-row col-md-12">
+
+          <div class="form-group col-md-4">
+            <label for="hqAddress">HQ Address</label>
+            <input type="text" class="form-control" id="hqAddress" placeholder="1234 Main St">
+          </div>
+
+          <div class="form-group col-md-2">
+            <label for="hqCity">City</label>
+            <input type="text" class="form-control" id="hqCity">
+          </div>
+
+          <div class="form-group col-md-2">
+            <label for="hqState">State</label>
+            <input type="text" class="form-control" id="hqState" placeholder="WA">
+          </div>
+
+          <div class="form-group col-md-2">
+            <label for="hqZip">Zip</label>
+            <input type="text" class="form-control" id="hqZip">
+          </div>
+
+        </div>
+
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </form>
+    </div>
   </div>
   <!-- Custom Script -->
-  <div class="form-container">
-
-<form>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-    </div>
-    <div class="form-group col-md-3">
-      <label for="inputPassword4">Password</label>
-      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-    </div>
-    <div class="form-group col-md-3">
-      <label for="inputPassword4">Confirm Password</label>
-      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-    </div>
-    
-  </div>
-  <div class="form-group">
-    <label for="inputAddress">Business Name</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-  </div>
-  <div class="form-group">
-    <label for="inputAddress">Site Address</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputCity">City</label>
-      <input type="text" class="form-control" id="inputCity">
-    </div>
-    <div class="form-group col-md-4">
-      <label for="inputState">State</label>
-      <select id="inputState" class="form-control">
-        <option selected>Choose...</option>
-        <option>...</option>
-      </select>
-    </div>
-    <div class="form-group col-md-2">
-      <label for="inputZip">Zip</label>
-      <input type="text" class="form-control" id="inputZip">
-    </div>
-  </div>
-
-<div class="form-group">
-  <label for="inputAddress">HQ Address</label>
-  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-</div>
-<div class="form-row">
-  <div class="form-group col-md-6">
-    <label for="inputCity">City</label>
-    <input type="text" class="form-control" id="inputCity">
-  </div>
-  <div class="form-group col-md-4">
-    <label for="inputState">State</label>
-    <select id="inputState" class="form-control">
-      <option selected>Choose...</option>
-      <option>...</option>
-    </select>
-  </div>
-  <div class="form-group col-md-2">
-    <label for="inputZip">Zip</label>
-    <input type="text" class="form-control" id="inputZip">
-  </div>
-</div>
-
-  <button type="submit" class="btn btn-primary">Sign in</button>
-</form>
-</div>
   <script src="js/index.js" type="text/javascript"></script>
 
 </body>

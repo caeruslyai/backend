@@ -1,7 +1,7 @@
 
 module.exports = function(sequelize, DataTypes) {
     var user = sequelize.define("user_data", {
-     name:{
+     user_name:{
        type:DataTypes.STRING,
        allowNull:false,
        primaryKey:true,
@@ -13,6 +13,22 @@ module.exports = function(sequelize, DataTypes) {
        type:DataTypes.STRING,
        allowNull:false,
        len:[8,16]
+     },
+     business_name:{
+       type:DataTypes.STRING,
+       allowNull:false
+     },
+     business_street:{
+        type:DataTypes.STRING,
+        allowNull:false
+     },
+     business_city_state_zip:{
+       type:DataTypes.STRING,
+       allowNull:false
+     },
+     business_hq:{
+       type:DataTypes.STRING,
+       allowNull:false
      }
   
     },{

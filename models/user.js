@@ -18,18 +18,22 @@ module.exports = function(sequelize, DataTypes) {
        type:DataTypes.STRING,
        allowNull:false
      },
-     business_street:{
+     site_street:{
         type:DataTypes.STRING,
         allowNull:false
      },
-     business_city_state_zip:{
+     site_city_state_zip:{
        type:DataTypes.STRING,
        allowNull:false
      },
-     business_hq:{
+     business_hq_street:{
        type:DataTypes.STRING,
        allowNull:false
-     }
+     },business_city_state_zip:{
+      type:DataTypes.STRING,
+      allowNull:false
+    }
+
   
     },{
       timestamps:false
